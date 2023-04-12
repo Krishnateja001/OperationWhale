@@ -1,0 +1,112 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OperationWhale</title>
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- <nav class="nav">
+        <div class="container">
+            <div class="nav_content">
+                <div class="logo">
+                    <a href="index.html" class="logo_text">
+                        <img src="img/recording.jpeg">
+                    </a>
+                </div>
+                <ul class="nav_list">
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="apps/recorder.html" class="nav_link">Recorder</a></li>
+                </ul>
+                <div class="nav_items">
+                    <a href="https://github.com/Krishnateja001/operationWhale" class="btn nav_btn">Source code</a>
+                    <span class="menu_btn"><i class="fas fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="logo_text">
+                    <img src="static/img/logo.jpg">
+                </a>
+            </div>
+            <!-- <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/"><span class="glyphicon"></span> Home</a></li>
+                <li><a href="apps/recorder.html"><span class="glyphicon "></span> Recorder</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main introduce">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h1 class="title">Operation Whale</h1>
+                    <div class="container">
+                        <div class="wrapper projects">
+                            <div class="project_box project_recorder">
+                                <a href="apps/recorder.html">
+                                    <h3 class="project_box_title"><span>Whale Detector</h3>
+                                </a>
+                                <a href="apps/sample_sounds.html">
+                                    <h3 class="project_box_title"><span>Sample sounds</h3>
+                                </a>
+                                <!-- <a href="apps/recorder.html"><img src="img/recorder.png" class="project_box_img" alt=""></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        </div>
+        <a href="https://github.com/Krishnateja001/operationWhale">
+            <div class="social-bar__item social-bar__github">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </div>
+        </a>
+        </div>
+    </footer>
+
+
+    <script>
+        const title = document.querySelectorAll('.project_box_title');
+        for (let i = 0; i < title.length; i++) {
+            title[i].addEventListener('mouseover', function () {
+                document.querySelectorAll('.project_box_img')[i].classList.add('active');
+            });
+            title[i].addEventListener('mouseout', function () {
+                document.querySelectorAll('.project_box_img')[i].classList.remove('active');
+            });
+        }
+    </script>
+    <script src="{% static 'js/nav.js'%}"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+/.DS_Store
+/__MACOSX
+/Storage
+/whaleDB_reduced
+db.sqlite3
+core/views.py
+OperationWhale/__pycache__/*
+core/__pycache__/*
+core/.DS_Store
+core/migrations/__pycache__/
